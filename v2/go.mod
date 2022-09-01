@@ -41,7 +41,7 @@ require (
 	github.com/remeh/sizedwaitgroup v1.0.0
 	github.com/rs/xid v1.4.0
 	github.com/segmentio/ksuid v1.0.4
-	github.com/shirou/gopsutil/v3 v3.22.7
+	github.com/shirou/gopsutil/v3 v3.22.8
 	github.com/spaolacci/murmur3 v1.1.0
 	github.com/spf13/cast v1.5.0
 	github.com/syndtr/goleveldb v1.0.0
@@ -68,6 +68,7 @@ require (
 	github.com/antchfx/xmlquery v1.3.12
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
 	github.com/docker/go-units v0.4.0
+	github.com/fatih/structs v1.1.0
 	github.com/h2non/filetype v1.1.3
 	github.com/hashicorp/go-version v1.6.0
 	github.com/mholt/archiver v3.1.1+incompatible
@@ -116,7 +117,6 @@ require (
 	github.com/dimchansky/utfbom v1.1.1 // indirect
 	github.com/dsnet/compress v0.0.1 // indirect
 	github.com/dustin/go-humanize v1.0.0 // indirect
-	github.com/fatih/structs v1.1.0 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect
