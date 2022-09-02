@@ -305,10 +305,10 @@ func TestDateTimeDslExpressions(t *testing.T) {
 		dslExpressions := map[string]interface{}{
 			`date_time("%Y-%M-%D")`:                      fmt.Sprintf("%02d-%02d-%02d", now.Year(), now.Month(), now.Day()),
 			`date_time("%Y-%M-%D", unix_time())`:         fmt.Sprintf("%02d-%02d-%02d", now.Year(), now.Month(), now.Day()),
-			`date_time("%Y-%M-%D", 1642024800)`:          "2022-01-13",
+			`date_time("%Y-%M-%D", 1642024800)`:          time.Date(2022, 01, 13, 0, 0, 0, 0, time.UTC).Format("2006-01-02"),
 			`date_time("%H-%m")`:                         fmt.Sprintf("%02d-%02d", now.Hour(), now.Minute()),
 			`date_time("02-01-2006 15:04", unix_time())`: now.Format("02-01-2006 15:04"),
-			`date_time("02-01-2006 15:04", 1642024800)`:  "13-01-2022 00:00",
+			`date_time("02-01-2006 15:04", 1642024800)`:  time.Date(2022, 01, 13, 0, 0, 0, 0, time.UTC).Format("02-01-2006 15:00"),
 		}
 
 		testDslExpressionScenarios(t, dslExpressions)
